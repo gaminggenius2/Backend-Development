@@ -23,10 +23,9 @@ app.use(express.urlencoded({extended:false}));//nice to have, helps us to do tes
 //////////////////////////////////////////////////////
 const mainRoutes = require("./Routes/mainRoutes")
 app.use("/", mainRoutes)
-
-res.send("hello world")
-;
-
+app.get("/", (req, res) => {
+    res.send("hello world");
+});
 //////////////////////////////////////////////////////
 // EXPORT APP
 //////////////////////////////////////////////////////
