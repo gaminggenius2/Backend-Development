@@ -6,3 +6,18 @@ create user :{
 }
 
 update user :
+
+
+
+
+
+
+create challenge : {
+  "challenge_name": "Run 5km",
+  "points": 50
+}
+
+edit challenge: {
+  "challenge_name": "Run 100km",
+  "points": 75
+}
