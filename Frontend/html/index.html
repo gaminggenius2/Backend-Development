@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Marketplace</h1>
+<p>Your points: <span id="userPoints">0</span></p>
+
+<h2>Items</h2>
+<ul id="itemList">
+  <li>Extra Life - 50 points <button onclick="buyItem(50)">Buy</button></li>
+  <li>Golden Badge - 100 points <button onclick="buyItem(100)">Buy</button></li>
+</ul>
+
+<script>
+let points = 120; // fetch this from backend in real scenario
+document.getElementById('userPoints').textContent = points;
+
+function buyItem(cost) {
+  if(points >= cost) {
+    points -= cost;
+    document.getElementById('userPoints').textContent = points;
+    alert('Purchase successful!');
+  } else {
+    alert('Not enough points!');
+  }
+}
+</script>
+</body>
+</html>
