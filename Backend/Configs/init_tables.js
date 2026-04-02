@@ -34,7 +34,24 @@ INSERT INTO Challenge (challenge_name, points, description) VALUES
 ('Daily Step Goal', 10, 'Walk at least 10,000 steps in a day.'),
 ('Zero-Waste Week', 50, 'Produce no single-use plastic waste for one week.'),
 ('Read a Book', 20, 'Finish reading a book on personal development.');
+
+CREATE TABLE Reviews (
+  review_id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  challenge_id INT NOT NULL,
+  rating INT,
+  comment TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO REVIEWS (user_id, challenge_id,rating,comment) VALUES
+(2,3,2,'not that fun'),
+(3,1,5,'amazing'),
+(1,2,4,'wow');
+
 `
+
+
 
 pool.query(SQLSTATEMENT, (error, results) => {
   if (error) {
