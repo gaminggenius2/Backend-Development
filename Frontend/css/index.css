@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: 'Manjari', sans-serif;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: lightcyan;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.auth-buttons button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #444;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.register-btn {
+  background-color: #007bff;
+}
+.card {
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+}  
+.card-img-top {
+  height: 400px;          /* pick a height you like */
+  object-fit: cover;     /* crop image to fit */
+  width: 100%;
+}
+.planet-info {
+  min-height: 100px;   /* adjust slightly if needed */
+}
+
+

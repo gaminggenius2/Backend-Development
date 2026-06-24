@@ -1,0 +1,96 @@
+/*=================================================================
+  COSMIC EXPLORERS - REVIEWS PAGE STYLES
+  Modern, space-themed design for reviews section
+  =================================================================*/
+
+/* === STAR RATING === */
+#starRating {
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+#starRating i {
+  transition: all 0.2s ease;
+  color: #6c757d;
+}
+
+#starRating i:hover {
+  transform: scale(1.2);
+  color: #ffc107;
+}
+
+#starRating i.bi-star-fill {
+  color: #ffc107;
+}
+
+/* === REVIEW CARDS === */
+.review-card {
+  background: linear-gradient(145deg, #1f2833 0%, #1a1f2e 100%);
+  border: 1px solid rgba(102, 252, 241, 0.2);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(102, 252, 241, 0.4);
+  box-shadow: 0 8px 25px rgba(102, 252, 241, 0.2);
+}
+
+.review-header {
+  border-bottom: 1px solid rgba(102, 252, 241, 0.1);
+  padding-bottom: 0.75rem;
+}
+
+.review-rating i {
+  font-size: 1rem;
+  margin-right: 2px;
+}
+
+.review-comment {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #c5c6c7;
+}
+
+/* === SUBMIT FORM === */
+.card-body {
+  background: rgba(15, 18, 26, 0.5);
+}
+
+.form-control,
+.form-control:focus {
+  background-color: rgba(31, 40, 51, 0.8);
+  border-color: rgba(69, 162, 158, 0.3);
+  color: #c5c6c7;
+}
+
+.form-control:focus {
+  border-color: #66fcf1;
+  box-shadow: 0 0 0 0.2rem rgba(102, 252, 241, 0.25);
+}
+
+.btn-dark {
+  background: linear-gradient(135deg, #45a29e 0%, #66fcf1 100%);
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background: linear-gradient(135deg, #66fcf1 0%, #45a29e 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 252, 241, 0.4);
+}
+
+/* === FOOTER === */
+.footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(69, 162, 158, 0.2);
+  color: #8892b0;
+}

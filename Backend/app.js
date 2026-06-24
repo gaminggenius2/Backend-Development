@@ -19,7 +19,7 @@ app.use(express.urlencoded({extended:false}));//nice to have, helps us to do tes
 //in CA2 add in additional line below
 //app.use(express.static('public'))// to serve static files in the 'public' folder(topic 7)
 
-app.use(express.static('public'));
+app.use(express.static('Frontend'));
 //////////////////////////////////////////////////////
 // SETUP ROUTES
 //////////////////////////////////////////////////////
